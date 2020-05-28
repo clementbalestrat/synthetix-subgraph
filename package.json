@@ -2,7 +2,7 @@
   "name": "synthetix-subgraph",
   "license": "MIT",
   "version": "1.2.1",
-  "author": "Synthetix",
+  "author": "Clement Balestrat",
   "main": "index.js",
   "browser": "index.min.js",
   "bin": {
@@ -20,14 +20,14 @@
     "build:rates": "graph build subgraphs/synthetix-rates.yaml",
     "build:depot": "graph build subgraphs/synthetix-depot.yaml",
     "build:exchanges": "graph build subgraphs/synthetix-exchanges.yaml",
-    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ --access-token $THEGRAPH_SNX_ACCESS_TOKEN",
-    "deploy:snx": "npm run deploy -- synthetixio-team/synthetix subgraphs/synthetix.yaml",
-    "deploy:rates": "npm run deploy -- synthetixio-team/synthetix-rates subgraphs/synthetix-rates.yaml",
-    "deploy:depot": "npm run deploy -- synthetixio-team/synthetix-depot subgraphs/synthetix-depot.yaml",
-    "deploy:exchanges": "npm run deploy -- synthetixio-team/synthetix-exchanges subgraphs/synthetix-exchanges.yaml",
-    "create-local": "graph create --node http://localhost:8020/ synthetixio-team/synthetix",
-    "remove-local": "graph remove --node http://localhost:8020/ synthetixio-team/synthetix",
-    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 synthetixio-team/synthetix"
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ --access-token $ACCESS_TOKEN",
+    "deploy:snx": "npm run deploy -- clementbalestrat/synthetix subgraphs/synthetix.yaml",
+    "deploy:rates": "npm run deploy -- clementbalestrat/synthetix-rates subgraphs/synthetix-rates.yaml",
+    "deploy:depot": "npm run deploy -- clementbalestrat/synthetix-depot subgraphs/synthetix-depot.yaml",
+    "deploy:exchanges": "npm run deploy -- clementbalestrat/synthetix-exchanges subgraphs/synthetix-exchanges.yaml",
+    "create-local": "graph create --node http://localhost:8020/ clementbalestrat/synthetix",
+    "remove-local": "graph remove --node http://localhost:8020/ clementbalestrat/synthetix",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 clementbalestrat/synthetix"
   },
   "dependencies": {
     "@graphprotocol/graph-cli": "0.18.0",
